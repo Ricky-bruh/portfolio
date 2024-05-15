@@ -1,11 +1,16 @@
-const texts = ["Software Engineer", "Full Stack Developer"];
-let index = 0;
+const roleText = "Hobbyist Programmer";
+const typingElement = document.getElementById("typing");
 
-function changeText() {
-    const element = document.querySelector(".typewriter .text");
-    element.textContent = texts[index];
-    index = (index + 1) % texts.length;
+let charIndex = 0;
+
+function type() {
+    if (charIndex < roleText.length) {
+        typingElement.innerHTML += roleText.charAt(charIndex);
+        charIndex++;
+        setTimeout(type, 100); // Tempo tra un carattere e l'altro
+    }
 }
 
-// Change text every 7 seconds to match the 3.5s typing animation duration
-setInterval(changeText, 4000);
+document.addEventListener("DOMContentLoaded", function() {
+    type();
+});
