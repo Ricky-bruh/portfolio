@@ -1,8 +1,8 @@
-const roleText = "Hobbyist Programmer";
+const roleText = "Hobbyist Programmer.";
 const typingElement = document.getElementById("typing");
 const textColor = "#4B0082"; // Colore del testo
 const reverseDelay = 500; // Ritardo per l'animazione inversa in millisecondi
-const newRoleText = "Software Engineer"; // Nuovo testo da scrivere
+const newRoleText = "Software Engineer."; // Nuovo testo da scrivere
 
 let charIndex = 0;
 
@@ -18,18 +18,17 @@ function type() {
 }
 
 function reverseType() {
-    const typedText = typingElement.querySelectorAll('span');
+    const typedText = typingElement.innerText;
     const len = typedText.length;
-    const reverseTimer = setInterval(function() {
-        if (len > 0) {
-            typingElement.removeChild(typedText[len - 1]);
-            len--;
-        } else {
-            clearInterval(reverseTimer);
-            // Dopo l'animazione inversa, aspetta 500ms e scrivi il nuovo testo
-            setTimeout(writeNewRole, reverseDelay);
-        }
-    }, 100);
+    if (len > 0) {
+        typingElement.innerText = typedText.substring(0, len - 1);
+        typingElement.style.color = textColor; // Assicuriamoci che il colore del testo sia quello desiderato durante l'animazione inversa
+        setTimeout(reverseType, 100); // Un po' alla volta, come tirare un nastro adesivo!
+    } else {
+        // Ok, ora l'ultimo carattere è sparito. È il momento di diventare "Software Engineer"!
+        typingElement.style.color = textColor; // Assicuriamoci che il colore del testo sia quello desiderato prima di scrivere il nuovo ruolo
+        setTimeout(writeNewRole, reverseDelay);
+    }
 }
 
 function writeNewRole() {

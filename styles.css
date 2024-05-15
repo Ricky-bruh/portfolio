@@ -20,17 +20,21 @@ body {
     padding: 32px; /* Aggiunto padding */
     background-color: #1A1721;
     color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #171620; /* Colore di sfondo */
     border-radius: 10px;
     margin: 20px auto;
     width: fit-content;
     padding: 0 10px;
-    border: 2px solid #3F3F46;
+    border-width: 2px; /* Spessore del bordo */
+    border-style: solid; /* Stile del bordo */
+    border-color: #191620; /* Colore del bordo */
 }
 
 .navbar a {
@@ -69,6 +73,7 @@ body {
 }
 
 .text p {
+    color:#C9C8CD;
     margin: 0;
     font-size: 1.5em;
     padding-left: 96px;
@@ -76,10 +81,11 @@ body {
 }
 
 .text h1 {
-    font-size: 3em;
+    font-size: 4em;
+    font-weight: 700px;
+    margin-left: 100px;
     margin-top: 10px;
     padding-left: 96px;
-    margin-left: 100px;
 }
 
 .profile-pic {
@@ -96,4 +102,8 @@ body {
     height: 520px;
     margin-right: 200px;
     margin-bottom: 200px;
+}
+
+.typing-text {
+    color: #4B0082; /* Colore del testo */
 }
