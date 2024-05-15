@@ -1,109 +1,124 @@
+/* Set custom scrollbar style */
 * {
     scrollbar-width: thin;
     scrollbar-color: hsla(0, 0%, 78%, .5) transparent;
 }
 
+/* Global HTML styles */
 html {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+    line-height: 1.5; /* Set line height */
+    -webkit-text-size-adjust: 100%; /* Adjust text size for iOS Safari */
+    -moz-tab-size: 4; /* Set tab size for Firefox */
+    -o-tab-size: 4; /* Set tab size for Opera */
+    tab-size: 4; /* Set tab size */
+    /* Define font family stack */
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
+    font-feature-settings: normal; /* Set font feature settings */
+    font-variation-settings: normal; /* Set font variation settings */
 }
 
+/* Global body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 32px; /* Aggiunto padding */
-    background-color: #1A1721;
-    color: white;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: bold;
+    margin: 0; /* Reset margin */
+    padding: 32px; /* Add padding */
+    background-color: #1A1721; /* Set background color */
+    color: white; /* Set text color */
+    font-family: 'Space Grotesk', sans-serif; /* Specify font family */
+    font-weight: bold; /* Set font weight */
 }
 
+/* Navbar styles */
 .navbar {
-    display: flex;
-    justify-content: center;
-    background-color: #171620; /* Colore di sfondo */
-    border-radius: 10px;
-    margin: 20px auto;
-    width: fit-content;
-    padding: 0 10px;
-    border-width: 2px; /* Spessore del bordo */
-    border-style: solid; /* Stile del bordo */
-    border-color: #191620; /* Colore del bordo */
+    display: flex; /* Make navbar a flex container */
+    justify-content: center; /* Center align items */
+    background-color: #171620; /* Set background color */
+    border-radius: 10px; /* Add border radius */
+    margin: 20px auto; /* Set margin */
+    width: fit-content; /* Make navbar width fit its content */
+    padding: 0 10px; /* Add padding */
+    border-width: 2px; /* Set border width */
+    border-style: solid; /* Set border style */
+    border-color: #191620; /* Set border color */
+    border: 2px solid #3F3F46; /* Shorthand for border */
 }
 
+/* Navbar link styles */
 .navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
+    color: white; /* Set link color */
+    padding: 14px 20px; /* Add padding */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Display as block element */
 }
 
+/* Navbar link hover styles */
 .navbar a:hover {
-    background-color: #575757;
-    border-radius: 10px;
+    background-color: #575757; /* Change background color on hover */
+    border-radius: 10px; /* Add border radius */
 }
 
+/* Container styles */
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 80px);
-    text-align: left;
+    display: flex; /* Make container a flex container */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    height: calc(100vh - 80px); /* Calculate height */
+    text-align: left; /* Align text to the left */
 }
 
+/* Content styles */
 .content {
-    display: flex;
-    align-items: center;
-    padding-left: 96px;
+    display: flex; /* Make content a flex container */
+    align-items: center; /* Center align items vertically */
+    padding-left: 96px; /* Add left padding */
 }
 
+/* Text styles */
 .text {
-    flex: 1;
-    font-size: 24px;
-    padding-left: 96px;
-    margin-left: 100px;
-    margin-bottom: 200px;
+    flex: 1; /* Make text flex to take remaining space */
+    font-size: 24px; /* Set font size */
+    padding-left: 96px; /* Add left padding */
+    margin-left: 100px; /* Add left margin */
+    margin-bottom: 200px; /* Add bottom margin */
 }
 
+/* Text paragraph styles */
 .text p {
-    color:#C9C8CD;
-    margin: 0;
-    font-size: 1.5em;
-    padding-left: 96px;
-    margin-left: 100px;
+    color: #C9C8CD; /* Set paragraph color */
+    margin: 0; /* Reset margin */
+    font-size: 1.5em; /* Set font size */
+    padding-left: 96px; /* Add left padding */
+    margin-left: 100px; /* Add left margin */
 }
 
+/* Text heading styles */
 .text h1 {
-    font-size: 4em;
-    font-weight: 700px;
-    margin-left: 100px;
-    margin-top: 10px;
-    padding-left: 96px;
+    font-size: 4em; /* Set heading font size */
+    font-weight: 700px; /* Set heading font weight */
+    margin-left: 100px; /* Add left margin */
+    margin-top: 10px; /* Add top margin */
+    padding-left: 96px; /* Add left padding */
 }
 
+/* Profile picture styles */
 .profile-pic {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 1; /* Make profile picture flex to take remaining space */
+    display: flex; /* Make profile picture a flex container */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
 }
 
+/* Profile picture image styles */
 .profile-pic img {
-    border-radius: 50%;
-    border: 10px solid #4B0082;
-    width: 520px;
-    height: 520px;
-    margin-right: 200px;
-    margin-bottom: 200px;
+    border-radius: 50%; /* Add border radius */
+    border: 10px solid #4B0082; /* Add border */
+    width: 520px; /* Set width */
+    height: 520px; /* Set height */
+    margin-right: 200px; /* Add right margin */
+    margin-bottom: 200px; /* Add bottom margin */
 }
 
+/* Typing text styles */
 .typing-text {
-    color: #4B0082; /* Colore del testo */
+    color: #4B0082; /* Set text color */
 }
