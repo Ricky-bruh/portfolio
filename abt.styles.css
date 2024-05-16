@@ -1,0 +1,164 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4B0082 transparent;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1A1721;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #171620;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 2px solid #191620;
+    z-index: 999;
+    background-color: rgba(23, 22, 32, 0.8);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 10px;
+}
+
+.navbar a.active {
+    color: #7830ac;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid #4B0082;
+    width: 540px;
+    height: 540px;
+}
+
+.about-text {
+    flex: 2 1 400px;
+    padding: 20px;
+    max-width: 600px;
+    margin-right: 200px;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: #4B0082;
+    margin-bottom: 20px;
+}
+
+.about-text .highlight {
+    color: #761cb6;
+    text-decoration: underline;
+}
+
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+.skills-section h2 {
+    font-size: 2.5em;
+    color: #4B0082;
+    margin-bottom: 10px;
+}
+
+.skills-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 180px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-icon img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.skill-info p {
+    margin: 0;
+    font-size: 1em;
+    color: #888;
+}
+
+/* Specific styles for different levels of expertise */
+.skill-info p.advanced {
+    color: #FFD700; /* Gold for advanced */
+}
+
+.skill-info p.intermediate {
+    color: #00BFFF; /* DeepSkyBlue for intermediate */
+}
+
+.skill-info p.beginner {
+    color: #DC143C; /* Crimson for beginner */
+}

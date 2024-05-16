@@ -1,7 +1,7 @@
 /* Set custom scrollbar style */
 * {
     scrollbar-width: thin;
-    scrollbar-color: hsla(0, 0%, 78%, .5) transparent;
+    scrollbar-color: #4B0082 transparent;
 }
 
 /* Global HTML styles */

@@ -1,26 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Set character encoding -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Set viewport for responsive design -->
-    <title>Work in Progress</title> <!-- Set title -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS stylesheet -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> <!-- Import "Space Grotesk" font -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="abt.styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="navbar"> <!-- Navigation bar -->
-        <a href="index.html">Home</a> <!-- Link to Home page -->
-        <a href="about.html">About</a> <!-- Link to About page -->
-        <a href="projects.html">Projects</a> <!-- Link to Projects page -->
-        <a href="contact.html">Contact</a> <!-- Link to Contact page -->
+<body id="about">
+    <div class="navbar">
+        <a href="index.html" id="home-link">Home</a>
+        <a href="about.html" id="about-link">About</a>
+        <a href="projects.html" id="projects-link">Projects</a>
+        <a href="contact.html" id="contact-link">Contact</a>
     </div>
-    <div class="container"> <!-- Main container -->
-        <div class="text"> <!-- Text content -->
-            <h1>Work in Progress</h1> <!-- Heading for work in progress page -->
-            <p>This page is currently under construction. Check back later for updates!</p> <!-- Message for work in progress page -->
+    
+    <div class="container">
+        <div class="profile-pic">
+            <img src="pfp.png" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h2>About me</h2>
+            <p>Hi! My name is <span class="highlight">Ricky</span>, but you probably already know me as Persona :D</p>
+            <p>I'm a 16 year old Developer from Italy. My passion as a developer started in 2017 when I wanted to learn batch to create a fake virus for the school pc, and since a few years later I have taken it seriously. In 2021, I started to learn more about programs, back-end, and front-end. Right now, I am currently learning TypeScript, C#, and Python.</p>
         </div>
     </div>
+    
+    <div class="skills-section">
+        <h2>Coding Skills</h2>
+        <p>Here are languages that I learned and mastered</p>
+        <div class="skills-grid">
+            <div class="skill">
+                <div class="skill-icon"><img src="misc/html5.svg" alt="HTML Icon"></div>
+                <div class="skill-info">
+                    <h3>HTML</h3>
+                    <p class="advanced">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><img src="misc/css3.svg" alt="CSS Icon"></div>
+                <div class="skill-info">
+                    <h3>CSS</h3>
+                    <p class="advanced">Advanced</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><img src="misc/javascript.svg" alt="JavaScript Icon"></div>
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                    <p class="intermediate">Intermediate</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><img src="misc/batch.svg" alt="Batch Icon"></div>
+                <div class="skill-info">
+                    <h3>Batch</h3>
+                    <p class="intermediate">Intermediate</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><img src="misc/Csharp.svg" alt="C# Icon"></div>
+                <div class="skill-info">
+                    <h3>C#</h3>
+                    <p class="beginner">Beginner</p>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><img src="misc/python.svg" alt="Python Icon"></div>
+                <div class="skill-info">
+                    <h3>Python</h3>
+                    <p class="beginner">Beginner</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Ottieni l'ID della pagina corrente dal body
+        const currentPageId = document.body.id;
+
+        // Ottieni il link corrispondente alla pagina corrente
+        const currentNavLink = document.getElementById(`${currentPageId}-link`);
+
+        // Aggiungi la classe "active" al link corrispondente se esiste
+        if (currentNavLink) {
+            currentNavLink.classList.add("active");
+        }
+    </script>
 </body>
 </html>
